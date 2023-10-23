@@ -1,0 +1,67 @@
+<%- include("sidebar/index.ejs"); %>
+
+        <!-- content -->
+        <div class="right content">
+            <h1><%= name %><span> <%= taskCounted %></span></h1>
+            <% taskObj.forEach((element) => { %>
+                <div><a href="<%= element._doc._id %>/<%= element.slug %>"><%= element._doc.activity %></a></div>
+            <% }); %>
+            <div class="list-sidebar">
+                <div class="list-nav">
+                    <div class="list-logo">
+                        <p>Inbox</p>
+                    </div>
+                    <div class="list-close">
+                        <i class='bx bx-dots-horizontal-rounded' ></i>
+                        <i class='bx bx-x'></i>
+                    </div>
+                </div>
+                <div class="list-content">
+                    <div class="list-header">
+                        <div class="list-name">
+                            <input type="checkbox" class="list-checkbox">
+                            <p>How Todoist's founder achieves his goals while reducing his stress</p>
+                        </div>
+                        <div class="list-desc">
+                            Systemist: Todoist's Founder's Personal Productivity Workflow
+                        </div>
+                    </div>
+                    <div class="list-specific">
+                        <div class="list-update">
+                            <div class="">List</div>
+                            <select name="list" id="">
+                                <option>List</option>
+                            </select>
+                            
+                        </div>
+                        <div class="due-date-update">
+                            <div class="">Due Date</div>
+                            <select name="" id="">
+                                <option>Due Date</option>
+                            </select>
+                            
+                        </div>
+                        <div class="priority-update">
+                            <div class="">Priority</div>
+                            <select name="" id="">
+                                <option>Priority</option>
+                            </select>
+                        </div>
+                        <div class="sub-task-update">
+                            <div class="sub-task-header">
+                                <p>Subtasks:</p>
+                                <div class="sub-task-add">
+                                    <i class='bx bx-plus' ></i>
+                                    <input type="text" class="sub-task-input" placeholder="Add New Subtask">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-update">
+                            <button type="submit">Delete Task</button>
+                            <button type="submit">Save Changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

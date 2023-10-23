@@ -1,0 +1,13 @@
+<%- include('partials/header.ejs'); %>
+<div class="card">
+    <div class="card" id="interactiveCard">
+        <form id="myForm" action="http://localhost:3000/api/v1/items/clickItem" method="post">
+          <input type="hidden" name="item" value="1" />
+          <button type="submit" id="submitLink"></button>
+        </form>
+        <div class="card-content">
+          <h2>Card Title</h2>
+          <p>This is the content of the card.</p>
+        </div>
+      </div>
+<%- include('partials/footer.ejs'); %>

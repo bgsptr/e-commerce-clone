@@ -1,0 +1,40 @@
+<%- include('partials/header.ejs'); %>
+
+<div class="register-container">
+    <div class="register-nav">
+        <div class="left-register-nav">
+            <div class="logo-register"><a href="#">Logo</a></div>
+        </div>
+        <div class="right-register-nav">
+            <a href="#" class="att-right-nav">Home</a>
+            <a href="#" class="att-right-nav">About</a>
+            <a href="#" class="att-right-nav">Services</a>
+            <a href="#" class="att-right-nav">Contact</a>
+            <a href="#" class="att-right-nav">Login</a>
+        </div>
+    </div>
+</div>
+<div class="hero-section">
+    <form action="/register" method="post" class="form-hero">
+        <h1>Sign In</h1>
+        <div class="form-input">
+            <div class="header-input">Email</div>
+            <input type="text" class="form-text">
+            <i class='bx bx-envelope'></i>
+        </div>
+        <div class="form-input">
+            <div class="header-input">Password</div>
+            <input type="text" class="form-text">
+            <i class='bx bx-lock-alt'></i>
+        </div>
+        <div class="form-agreement">
+            <div class="agreemenet-container">
+                <input type="checkbox" name="" id="" class="agreement-checkbox">
+                <div class="agreement-text">Remember Me</div>
+            </div>
+            <a href="#" class="forgot-text">Forgot Password?</a>
+        </div>
+    </form>
+</div>
+
+<%- include('partials/footer.ejs'); %>
